@@ -50,7 +50,7 @@ import org.wso2.siddhi.query.api.exception.ExecutionPlanValidationException;
  * an event at least postBoundChange% less than maximum event must arrive after maximum, within maxPostBound length window
  *
  * Sample Query (variable, maxPreBound, maxPostBound, preBoundChange, postBoundChange, extrema type):
- * from inputStream#timeseries:minMax(price, 4, 4, 1, 2, 'minmax')
+ * from inputStream#extrema:minMax(price, 4, 4, 1, 2, 'minmax')
  * select *
  * insert into outputStream;
  */
